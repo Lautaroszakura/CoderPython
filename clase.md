@@ -37,4 +37,11 @@ Proporciona una estructura y conjnto de herramientas para simplificar el proceso
  Dentro de src, se ejecuta en la terminal
 
     python manage.py runserver #Se inicializa el servidor de Django
+    #Ctrl+C para poder escribir
+    #Se hacen los commit para todo
+    #Se hace git push para subirlo a la nube
 
+Creacion de aplicacion Django
+
+    python manage.py startapp core
+    #Se hace un commit
