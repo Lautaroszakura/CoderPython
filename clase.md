@@ -45,3 +45,10 @@ Creacion de aplicacion Django
 
     python manage.py startapp core
     #Se hace un commit
+    #Se agrega core a las app instaladas en settings, y se hace el commit
+
+Primera vista
+    Dentro de la carpeta core
+    Ir a vista y agregar la importacion
+
+        from django.http import HttpResponse

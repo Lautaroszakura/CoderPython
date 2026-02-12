@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+#Se importa desde core la funcion creada
+from core import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('saludar/', views.saludar)
 ]
