@@ -52,3 +52,44 @@ Primera vista
     Ir a vista y agregar la importacion
 
         from django.http import HttpResponse
+
+Clase 2 Febrero
+
+Para inicializar
+    python -m  venv .venv
+    .venv\Scripts\activate
+    pip install django
+
+Para no instalar varios paquetes, se puede crear un archivo config
+    config install django
+    pip freeze > requirements.txt (Entrega que paquetes se tiene instalados en .venv)
+    pip install -r requirements.txt (Para instalar los requerimientos)
+
+Apenas se crea una aplicacion, se debe registrarla en settings
+INSTALLED APPS
+Para instalarla
+    cd src
+    python manage.py 
+
+En core se creo una funcion que responde con HTML
+Para verlo
+    python manage.py runserver
+
+Se va a crear otra url
+En el archivo views.py
+    def saludar_con_etiqueta(request):
+        return HttpResponse('<h1>Este es el titulo de mi App</h1>')
+
+Luego en el archivo urls se agrega ultimo
+    path('saludar_con_etiqueta/', views.saludar_con_etiqueta)
+
+Creando el primer Template (plantilla)
+1Dentro de la aplicacion se crea una carpeta llamada templates, en la miosma, otra que se llame igual a la aplicacion
+2Dentro de esa carpeta sse crea uun archivo index.html
+3Dentro de index.html se apreta ! para crear el body
+4Dentro de body se escribe lo que queresmos qque se vea en la pagina
+5Se agrega una funcion en core/views.py
+6Se va a config/settings.urls y se crea una URL, que cuando el usuario solicite (request) tal URL, la funcion controladora index, responda la pagina index
+
+Bases de datos relacionales
+
